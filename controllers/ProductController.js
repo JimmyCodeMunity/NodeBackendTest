@@ -7,7 +7,7 @@ const express = require("express");
 const getProducts = async (req, res) => {
     try {
         const product = await Product.find(req.body);
-        res.status(200).json({product})
+        res.status(200).json(product)
         console.log("Products fetched successfully")
         
     } catch (error) {
