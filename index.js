@@ -60,10 +60,10 @@ Connect()
 //     console.log(error)
 // })
 
-// app.get('/',(req,res)=>{
-//     throw new Error('Fake error')
-//     //res.send("Welcome to my Node Mongo Test")
-// })
+app.get('/',(req,res)=>{
+    //throw new Error('Fake error')
+    res.send("Welcome to my Node Mongo Test")
+})
 
 
 //app.use(errorMiddleware)
